@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --tipografia-general: 'Roboto', sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,5 +11,10 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color: red;
+    font-family: var(--tipografia-general);
+}
+
+.imagenPerfil{
+    width: 200px;
 }
