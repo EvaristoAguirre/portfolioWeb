@@ -4,7 +4,7 @@
     --tipografia-general: 'Roboto', sans-serif;
     --tipografia-clara: rgba(106, 102, 102, 0.963);
     --tipografia-oscura: rgba(52, 51, 51, 0.963);
-    --color-primario: rgba(25, 110, 247, 0.963);
+    --color-primario: rgba(70, 137, 246, 0.963);
     --color-secundario: rgba(134, 134, 134, 0.963);
     
 }
@@ -18,8 +18,43 @@
 body{
     background-color: whitesmoke;
     font-family: var(--tipografia-general);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 80%;
+    background-color: blue;
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: aquamarine;
+}
+
+nav li{
+    display:inline;  
+    margin-left: 1rem;
+}
+
+.hero{
+    background-color: var(--color-primario);
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagenPerfil{
     width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 0.4rem solid white;
 }
