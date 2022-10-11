@@ -2,6 +2,11 @@
 
 :root{
     --tipografia-general: 'Roboto', sans-serif;
+    --tipografia-clara: rgba(106, 102, 102, 0.963);
+    --tipografia-oscura: rgba(52, 51, 51, 0.963);
+    --color-primario: rgba(25, 110, 247, 0.963);
+    --color-secundario: rgba(134, 134, 134, 0.963);
+    
 }
 
 *{
@@ -11,7 +16,7 @@
 }
 
 body{
-    background-color: red;
+    background-color: whitesmoke;
     font-family: var(--tipografia-general);
 }
 
