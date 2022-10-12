@@ -142,10 +142,76 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
 }
 
 .color{
     background-color: var(--color-fondo-claro);
+}
+
+.footer-modificador-color{
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-primario);
+}
+
+.seccion-encabezado{
+    text-align: center;
+}
+
+.seccion-encabezado p{
+    background-color: var(--color-primario);
+    font-size: 15px;
+    padding: 2rem auto;
+    margin-bottom: 1rem;
+    display: inline;
+}
+
+.seccion-encabezado h2{
+    font-size: 25px;
+}
+
+/*     Estilos 2da sección     */
+
+.seccion-columnas{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 2rem;
+}
+
+.seccion-columnas .colA{
+    width: 60%;
+}
+
+.seccion-columnas .colB{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 15%;
+}
+.seccion-columnas .colB h2{
+    display: inline;
+    font-size: 5rem;
+    background-color: var(--color-primario);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.seccion-columnas .colB h3{
+    text-align: center;
+}
+
+.seccion-datos{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccion-datos li{
+    list-style-type: none;
 }
 
