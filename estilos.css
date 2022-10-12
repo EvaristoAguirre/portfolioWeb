@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
 
 :root{
-    --tipografia-general: 'Roboto', sans-serif;
+    --tipografia-general: 'Nanum Gothic', sans-serif;
     --tipografia-clara: rgba(106, 102, 102, 0.963);
-    --tipografia-oscura: rgba(52, 51, 51, 0.963);
+    --tipografia-oscura: rgba(25, 24, 24, 0.963);
     --color-primario: rgba(70, 137, 246, 0.963);
-    --color-secundario: rgba(134, 134, 134, 0.963);
+    --color-secundario: rgba(88, 87, 87, 0.963);
+    --color-fondo-claro: rgba(193, 193, 196, 0.813);
+
     
 }
 
@@ -18,6 +22,7 @@
 body{
     background-color: whitesmoke;
     font-family: var(--tipografia-general);
+    color: var(--tipografia-oscura);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -27,7 +32,12 @@ body{
 
 header{
     width: 80%;
-    background-color: blue;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+
 }
 
 nav{
@@ -35,26 +45,107 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
-    background-color: aquamarine;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    font-weight: 900;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 nav li{
     display:inline;  
     margin-left: 1rem;
+    font-weight: 600;
 }
 
-.hero{
-    background-color: var(--color-primario);
-    height: 40rem;
+nav i{
+    font-size: 1.3rem;
+    color:var(--color-secundario);
+    margin-left: 0.8rem;
+}
+
+main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.imagenPerfil{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 0.4rem solid white;
+.hero{
+    width: 80%;
+    background-color: var(--color-primario);
+    height: 40rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
 }
+
+.imagenPerfil{
+    width: 300px;
+    clip-path: circle(50% at 50% 50%);
+    
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.hero p{
+    margin-bottom: 2rem;
+}
+
+.btns-hero{
+    display: flex;
+    justify-content:flex-start;
+    column-gap: 4rem;
+    align-items: center;
+    
+}
+
+.btn-hero{
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 16px 45px;
+    background-color: rgba(25, 24, 24, 0.963);
+    color: whitesmoke;
+    border: 1px solid rgba(25, 24, 24, 0.963);
+}
+
+.link-hero{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.link-hero p{
+    color: var(--tipografia-oscura);
+    margin-right: 5px;
+}
+
+.link-hero i{
+    color: var(--tipografia-oscura);
+}
+
+/*       Modificacion de forma y color secciones      */
+
+.seccion-modificador{
+    width: 80%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.color{
+    background-color: var(--color-fondo-claro);
+}
+
