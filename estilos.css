@@ -8,7 +8,7 @@
     --tipografia-oscura: rgba(25, 24, 24, 0.963);
     --color-primario: rgba(70, 137, 246, 0.963);
     --color-secundario: rgba(88, 87, 87, 0.963);
-    --color-fondo-claro: rgba(226, 226, 229, 0.813);
+    --color-fondo-claro: rgba(226, 226, 229, 0.25);
     font-size: 16px;
     
 }
@@ -20,7 +20,7 @@
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: white;
     font-family: var(--tipografia-general);
     color: var(--tipografia-oscura);
     width: 100%;
@@ -150,6 +150,7 @@ main{
 
 .color{
     background-color: var(--color-fondo-claro);
+    
 }
 
 
@@ -164,7 +165,7 @@ main{
 
 .seccion-encabezado{
     text-align: center;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .seccion-encabezado p{
@@ -361,5 +362,42 @@ main{
 
   /* -------------      Estilos 5ta sección         ------------ */
 
+  .portfolio-lista ul{
+    display: flex;
+    
+  }
   
-  
+  .portfolio-lista li{
+    margin: 0 0 1.5rem 1rem;
+    list-style-type: none;
+    font-size: .75rem;
+    color: var(--tipografia-clara);
+    border-bottom: .1rem solid transparent;
+
+  }
+
+  .portfolio-lista li:hover{
+    color: var(--tipografia-oscura);
+    border-bottom: .1rem solid var(--color-primario);
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .portfolio-galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .portfolio-galeria div{
+    width: 12rem;
+    height: 12rem;
+    /* background-color: tomato; */
+    
+  }
+
+/* -------------      Estilos 6ta sección         ------------ */
