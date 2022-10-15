@@ -8,7 +8,7 @@
     --tipografia-oscura: rgba(25, 24, 24, 0.963);
     --color-primario: rgba(70, 137, 246, 0.963);
     --color-secundario: rgba(88, 87, 87, 0.963);
-    --color-fondo-claro: rgba(193, 193, 196, 0.813);
+    --color-fondo-claro: rgba(226, 226, 229, 0.813);
     font-size: 16px;
     
 }
@@ -180,6 +180,10 @@ main{
     margin: 0.6rem 0 1.5rem 0;
 }
 
+.container p, .educacion p, .experiencia p{
+    color: var(--tipografia-clara);
+}
+
 /* -------------      Estilos 2da sección         ------------ */
 
 .seccion-columnas{
@@ -299,4 +303,63 @@ main{
   
   /* -------------      Estilos 4ta sección         ------------ */
 
+  .resumen-columnas{
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    /* background-color: aqua; */
+    column-gap: 2rem;
+    
+  }
+  
+  .resumen-colA h2, .resumen-colB h2{
+    font-size: 1.35rem;
+
+  }
+
+  .resumen-colA, .resumen-colB{
+    width: 40%;
+
+  }
+
+  .educacion, .experiencia{
+    /* background-color: rgb(243, 140, 122); */
+    /* width: 40%; */
+    padding-left: 0.45rem;
+    margin: 0 1rem;
+    border-left: 0.15rem solid var(--color-primario);
+  }
+
+  .resumen-colA div:nth-child(n), .resumen-colB div:nth-child(n){
+    margin: 1rem 0;
+
+  }
+
+  .educacion div:nth-child(n), .experiencia div:nth-child(n){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    height: 6rem;
+    /* background-color: tomato; */
+  }
+
+  .educacion hr, .experiencia hr {
+    color: var(--color-secundario);
+    
+  }
+
+  .educacion h2, .experiencia h2, .educacion h3, .experiencia h3 {
+    font-size: 1rem;
+    
+  }
+
+  .educacion p, .experiencia p {
+    font-size: .75rem;
+    
+  }
+
+  /* -------------      Estilos 5ta sección         ------------ */
+
+  
   
