@@ -9,7 +9,7 @@
     --color-primario: rgba(70, 137, 246, 0.963);
     --color-secundario: rgba(88, 87, 87, 0.963);
     --color-fondo-claro: rgba(193, 193, 196, 0.813);
-
+    font-size: 16px;
     
 }
 
@@ -75,15 +75,16 @@ main{
 .hero{
     width: 80%;
     background-color: var(--color-primario);
-    height: 40rem;
+    height: 35rem;
     display: flex;
     justify-content: space-around;
     align-items: center;   
 }
 
 .imagenPerfil{
-    width: 300px;
+    width: 400px;
     clip-path: circle(50% at 50% 50%);
+    
     
 }
 
@@ -138,17 +139,19 @@ main{
 
 .seccion-modificador{
     width: 80%;
-    height: 40rem;
+    /* height: 35rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 3rem 0;
     
 }
 
 .color{
     background-color: var(--color-fondo-claro);
 }
+
 
 .footer-modificador-color{
     width: 80%;
@@ -165,26 +168,34 @@ main{
 
 .seccion-encabezado p{
     background-color: var(--color-primario);
-    font-size: 15px;
-    padding: 2rem auto;
-    margin-bottom: 1rem;
-    display: inline;
+    font-size: 0.75rem;
+    /* padding: 10rem; */
+    margin-bottom: 0.75rem;
+    /* display: inline; */
 }
 
 .seccion-encabezado h2{
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
-/*     Estilos 2da sección     */
+/* -------------      Estilos 2da sección         ------------ */
 
 .seccion-columnas{
     display: flex;
-    justify-content:space-evenly;
-    padding: 2rem;
+    justify-content:space-around;
+    padding: 2rem 2rem 4rem 0.5rem;
+    /* column-gap: auto; */
 }
 
 .seccion-columnas .colA{
-    width: 60%;
+    width: 50%;
+    
+}
+
+.seccion-columnas .colA h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+
 }
 
 .seccion-columnas .colB{
@@ -192,10 +203,12 @@ main{
     justify-content: center;
     flex-direction: column;
     width: 15%;
+    padding-right: 4.5rem;
+    background-color: violet;
 }
 .seccion-columnas .colB h2{
     display: inline;
-    font-size: 5rem;
+    font-size: 4.5rem;
     background-color: var(--color-primario);
     border-radius: 50%;
     text-align: center;
@@ -208,10 +221,25 @@ main{
 .seccion-datos{
     width: 90%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .seccion-datos li{
     list-style-type: none;
 }
 
+.seccion-datos li h2{
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: var(--tipografia-clara);
+}
+
+.seccion-datos li p{
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--tipografia-oscura);
+}
+
+.seccion-datos .email{
+    text-decoration: underline;
+}
