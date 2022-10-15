@@ -164,18 +164,20 @@ main{
 
 .seccion-encabezado{
     text-align: center;
+    background-color: aqua;
 }
 
 .seccion-encabezado p{
     background-color: var(--color-primario);
     font-size: 0.75rem;
     /* padding: 10rem; */
-    margin-bottom: 0.75rem;
-    /* display: inline; */
+    /* margin-bottom: 10.75rem; */
+    display: inline;
 }
 
 .seccion-encabezado h2{
     font-size: 1.5rem;
+    margin: 0.6rem 0 1.5rem 0;
 }
 
 /* -------------      Estilos 2da sección         ------------ */
@@ -243,3 +245,58 @@ main{
 .seccion-datos .email{
     text-decoration: underline;
 }
+
+/* -------------      Estilos 3ra sección         ------------ */
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5% 5%;
+    /* grid-auto-flow: row; */
+    padding: 0 3rem;
+    grid-template-areas:
+      "Box-1 Box-2 Box-3"
+      "Box-4 Box-5 Box-6";
+  }
+  
+  .Box-1 {grid-area: Box-1;
+            background-color: tomato;
+}
+  .Box-2 {grid-area: Box-2;
+            background-color: aqua;
+}
+  .Box-3 {grid-area: Box-3;}
+  .Box-4 {grid-area: Box-4;}
+  .Box-5 {grid-area: Box-5;}
+  .Box-6 {grid-area: Box-6;}
+
+  .container div:nth-child(n) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    /* background-color: tomato; */
+    padding: 1rem;
+  }
+
+  .container i:nth-child(n){
+    color: var(--color-primario);
+    padding-bottom: 0.5rem;
+  }
+
+  .container h3:nth-child(n){
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .container p:nth-child(n){
+    font-size: 0.75rem;
+    width: auto;
+  }
+  
+  /* -------------      Estilos 4ta sección         ------------ */
+
+  
