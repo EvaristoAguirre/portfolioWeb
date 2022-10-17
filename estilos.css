@@ -9,7 +9,7 @@
     --color-fondo-claro: rgba(226, 226, 229, 0.25);
     font-size: 16px;
     
-    
+
 }
 
 *{
@@ -41,9 +41,9 @@ header{
 }
 
 nav{
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
     /* background-color: rgb(236, 188, 236); */
@@ -80,33 +80,45 @@ main{
     width: 100%;
     height: 35rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;   
 }
 
+.hero-caja-texto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* background-color: aqua; */
+}
+
 .imagenPerfil{
-    width: 400px;
+    width: 25rem;
     /* clip-path: circle(50% at 50% 50%); */
     border-radius: 50%;
     border: .75rem solid rgba(255, 255, 255,0.99);
-     
+    margin-right: 3rem;
 }
 
 .hero h2 {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.15rem;
 
 }
 
 .hero h1 {
     font-size: 4.5rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1.15rem;
+    border-right: .5rem solid var(--color-secundario);
+    padding-right: .3rem;
+    /* background-color: aqua; */
+    
 }
 
 .hero p{
-    margin-bottom: 2rem;
+    margin-bottom: 1.15rem;
 }
 
 .btns-hero{
@@ -142,10 +154,10 @@ main{
 /*       Modificacion de forma y color secciones      */
 
 .seccion-modificador{
-    width: 80%;
+    width: 100%;
     /* height: 35rem; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 3rem 0;
@@ -163,10 +175,10 @@ main{
 
 
 .footer-modificador-color{
-    width: 80%;
+    width: 100%;
     height: 5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--tipografia-oscura);
     color: white;
@@ -199,47 +211,70 @@ main{
 /* -------------      Estilos 2da sección         ------------ */
 
 .seccion-columnas{
+    width: 80%;
     display: flex;
-    justify-content:space-around;
-    padding: 2rem 2rem 4rem 0.5rem;
+    justify-content:space-between;
+    padding: 2rem 2rem 3rem 0.5rem;
     /* column-gap: auto; */
+    /* background-color: aquamarine    ; */
 }
 
 .seccion-columnas .colA{
     width: 50%;
+    
     
 }
 
 .seccion-columnas .colA h2{
     font-size: 1.5rem;
     font-weight: normal;
+}
 
+.seccion-columnas .colA ins{
+    border: 2px solid var(--color-primario);
+}
+
+.seccion-columnas .colA p{
+    line-height: 2rem;
 }
 
 .seccion-columnas .colB{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 15%;
-    padding-right: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 10rem;
+    /* padding-right: 4.5rem; */
     /* background-color: violet; */
 }
 .seccion-columnas .colB h2{
-    display: inline;
+    /* display: inline; */
     font-size: 4.5rem;
-    background-color: var(--color-primario);
+    
+    /* background-color: aqua; */
+    /* text-align: center; */
+}
+
+.seccion-columnas .colB .circulo{
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
-    text-align: center;
+    background-color: var(--color-primario);
+    
 }
 
 .seccion-columnas .colB h3{
     text-align: center;
+    align-content: center;
+    padding-top: 1rem;
 }
 
 .seccion-datos{
-    width: 90%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* background-color: aqua; */
 }
 
 .seccion-datos li{
@@ -268,22 +303,25 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5% 5%;
-    /* grid-auto-flow: row; */
+    gap: 7% 7%;
+    width: 90%;
     padding: 0 3rem;
+    box-sizing: border-box;
     grid-template-areas:
       "Box-1 Box-2 Box-3"
       "Box-4 Box-5 Box-6";
   }
   
-  /* .Box-1 {grid-area: Box-1;
-            background-color: tomato;
+  .Box-1 {grid-area: Box-1;
+            /* background-color: tomato; */
 }
   .Box-2 {grid-area: Box-2;
-            background-color: aqua;
-} */
+            /* background-color: aqua; */
+}
 
-  .Box-3 {grid-area: Box-3;}
+  .Box-3 {grid-area: Box-3;
+            /* background-color: tomato; */
+}
   .Box-4 {grid-area: Box-4;}
   .Box-5 {grid-area: Box-5;}
   .Box-6 {grid-area: Box-6;}
@@ -403,7 +441,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 80%;
     /* background-color: aqua; */
     flex-wrap: wrap;
     gap: 1rem;
@@ -412,8 +450,10 @@ main{
   .portfolio-galeria div{
     width: 12rem;
     height: 12rem;
-    background-color: tomato;
-    
+    /* background-color: tomato; */
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
   }
 
 /* -------------      Estilos 6ta sección         ------------ */
@@ -438,7 +478,7 @@ main{
 .contacto-datos{
     /* background-color: aqua; */
     /* display: flex; */
-    
+
 }
 
 .contacto-datos p{
@@ -450,7 +490,7 @@ main{
     margin: 1rem 0;
 }
 
-..contacto-datos-personales h3{
+.contacto-datos-personales h3{
     /* font-weight: 600; */
     
 }
@@ -514,4 +554,35 @@ main{
 
 .formulario-btn p{
     margin-right: 1rem;
+}
+
+
+/* -------------      Estilos Footer         ------------ */
+
+
+
+
+/* -------------      Diseño Responsive      ------------ */
+
+@media only screen and (max-width: 768px) { 
+    
+    :root {
+        font-size: 12px;
+    }
+    
+    body{
+      background-color: aqua;  
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    
+    :root {
+        font-size: 8px;
+    }
+    
+    body{
+        background-color: lightcoral;
+    }
 }
