@@ -4,7 +4,7 @@
     --tipografia-general: 'Poppins', sans-serif;
     --tipografia-clara: rgba(106, 102, 102, 0.963);
     --tipografia-oscura: rgba(25, 24, 24, 0.963);
-    --color-primario: rgba(70, 137, 246, 0.963);
+    --color-primario: rgba(97, 154, 246, 0.963);
     --color-secundario: rgba(88, 87, 87, 0.963);
     --color-fondo-claro: rgba(226, 226, 229, 0.25);
     font-size: 16px;
@@ -29,11 +29,13 @@ body{
     align-items: center;
 }
 
+/* ----------------------- ESTILOS HEADER ----------------  */
+
 header{
     width: 100%;
     height: 1.75rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 1rem 0;
     /* background-color: aqua; */
@@ -41,9 +43,9 @@ header{
 }
 
 nav{
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
     /* background-color: rgb(236, 188, 236); */
@@ -63,10 +65,20 @@ nav li{
     font-size: .75rem;
 }
 
+nav a{
+    text-decoration: none;
+    color: var(--tipografia-oscura);
+}
+
 nav i{
     font-size: 1.3rem;
     color:var(--color-secundario);
     margin-left: 0.8rem;
+
+}
+
+.nav-redes{
+
 }
 
 main{
@@ -76,44 +88,65 @@ main{
     align-items: center;
 }
 
+/*  ------------------ ESTILOS 1RA SECCION - HERO ----------       */
+
 .hero{
     width: 100%;
-    height: 35rem;
+    height: 30rem;
     display: flex;
-    justify-content: center;
-    align-items: center;   
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+   
 }
 
 .hero-caja-texto{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 80%;
-    /* background-color: aqua; */
+    width: 100%;
+    /* background-color: rgb(195, 247, 39); */
+}
+
+.texto-hero{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: lightgreen; */
+
 }
 
 .imagenPerfil{
-    width: 25rem;
+    width: 20rem;
     /* clip-path: circle(50% at 50% 50%); */
     border-radius: 50%;
     border: .75rem solid rgba(255, 255, 255,0.99);
     margin-right: 3rem;
 }
 
-.hero h2 {
+.texto-hero h2 {
     font-size: 1.5rem;
     text-transform: uppercase;
+    /* margin-bottom: 1.15rem; */
+    /* background-color: lightcoral; */
     margin-bottom: 1.15rem;
+    font-weight: 300;
 
 }
 
 .hero h1 {
+    width: 100%;
     font-size: 4.5rem;
     text-transform: uppercase;
     margin-bottom: 1.15rem;
     border-right: .5rem solid var(--color-secundario);
     padding-right: .3rem;
     /* background-color: aqua; */
+    letter-spacing: .15rem;
+    word-spacing: .75rem;
+    line-height: 1;
+    font-weight: 600;
     
 }
 
@@ -141,6 +174,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: baseline;
+    align-content: center;
+    /* background-color: aqua; */
+    padding-top: 1rem;
 }
 .link-hero p{
     color: var(--tipografia-oscura);
@@ -151,7 +187,13 @@ main{
     color: var(--tipografia-oscura);
 }
 
-/*       Modificacion de forma y color secciones      */
+.hero-flecha{
+    width: 1.3rem;
+    /* background-color: aqua; */
+    margin-top: 3rem;
+}
+
+/* -----------  Modificacion de forma y color secciones -----------  */
 
 .seccion-modificador{
     width: 100%;
@@ -177,13 +219,14 @@ main{
 .footer-modificador-color{
     width: 100%;
     height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     background-color: var(--tipografia-oscura);
     color: white;
     font-size: 0.65rem;
     font-weight: 100;
+
+    display: flex;
+    justify-content: center;
 }
 
 .seccion-encabezado{
@@ -194,9 +237,9 @@ main{
 .seccion-encabezado p{
     background-color: var(--color-primario);
     font-size: 0.75rem;
-    /* padding: 10rem; */
-    /* margin-bottom: 10.75rem; */
+
     display: inline;
+
 }
 
 .seccion-encabezado h2{
@@ -214,24 +257,34 @@ main{
     width: 80%;
     display: flex;
     justify-content:space-between;
-    padding: 2rem 2rem 3rem 0.5rem;
-    /* column-gap: auto; */
-    /* background-color: aquamarine    ; */
+    /* padding: 2rem 2rem 3rem 0.5rem; */
+    column-gap: 4rem;
+    /* background-color: aquamarine; */
+    align-items: center;
 }
 
 .seccion-columnas .colA{
-    width: 50%;
-    
+    width: 60%;
+    /* background-color: lightgreen; */
     
 }
 
 .seccion-columnas .colA h2{
     font-size: 1.5rem;
-    font-weight: normal;
+    font-weight: 300;
+    margin-bottom: .5rem;
 }
 
-.seccion-columnas .colA ins{
-    border: 2px solid var(--color-primario);
+/* .seccion-columnas .colA ins{
+    text-decoration-color: var(--color-primario);
+    padding-bottom: 1.25rem;
+    
+} */
+
+.seccion-columnas .colA span{
+    border-bottom: .25rem solid var(--color-primario);
+    font-weight: 500;
+    
 }
 
 .seccion-columnas .colA p{
@@ -241,36 +294,50 @@ main{
 .seccion-columnas .colB{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 10rem;
+    justify-content:flex-start;
+    align-items:center;
+    width: 40%;
+    /* height: 7rem; */
     /* padding-right: 4.5rem; */
     /* background-color: violet; */
 }
-.seccion-columnas .colB h2{
-    /* display: inline; */
-    font-size: 4.5rem;
-    
+
+.seccion-columnas .colB .exper-anios{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     /* background-color: aqua; */
-    /* text-align: center; */
+}
+
+.seccion-columnas .colB h2{
+
+    font-size: 4.5rem;
+    position: relative;
+    top: 2.5rem;
+    z-index: 1;
 }
 
 .seccion-columnas .colB .circulo{
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     background-color: var(--color-primario);
+    position: relative;
+    bottom: 2.75rem;
     
 }
 
 .seccion-columnas .colB h3{
-    text-align: center;
-    align-content: center;
-    padding-top: 1rem;
+    position: relative;
+    bottom: 2.5rem;
+    font-weight: 300;
+
 }
 
 .seccion-datos{
+    margin-top: 2rem;
+    padding-right: 3rem;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -352,10 +419,8 @@ main{
     width: auto;
   }
 
-  .Box-1 h3{
-    /* font-weight: 800; */
-  }
   
+
   /* -------------      Estilos 4ta sección         ------------ */
 
   .resumen-columnas{
@@ -413,6 +478,140 @@ main{
     font-size: .75rem;
     
   }
+
+  .resumen-skills{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-columnas{
+    width: 80%;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .skills-colA, .skills-colB{
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .skill{
+    margin-bottom: 1rem;
+  }
+
+  .skill-lineas{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .skill-texto{
+    display: flex;
+    justify-content: space-between;
+    font-size: .75rem;
+    font-weight: 500;
+
+  }
+
+  .skill-lineas .linea-1{
+    width: 33%;
+    height: .3rem;
+    background-color: lightgrey;
+  }
+
+  .skill-lineas .linea-2{
+    width: 67%;
+    height: .3rem;
+    background-color: var(--color-primario);
+    
+  }
+
+  .skill-lineas .linea-3{
+    width: 87%;
+    height: .35rem;
+    background-color: lightgrey;
+  }
+
+  .skill-lineas .linea-4{
+    width: 13%;
+    height: .35rem;
+    background-color: var(--color-primario);
+    
+  }
+
+  .skill-lineas .linea-5{
+    width: 98%;
+    height: .3rem;
+    background-color: lightgrey;
+  }
+
+  .skill-lineas .linea-6{
+    width: 2%;
+    height: .3rem;
+    background-color: var(--color-primario);
+    
+  }
+
+  .skill-lineas .linea-7{
+    width: 16%;
+    height: .3rem;
+    background-color: lightgrey;
+  }
+
+  .skill-lineas .linea-8{
+    width: 84%;
+    height: .3rem;
+    background-color: var(--color-primario);
+    
+  }
+
+  .skill-lineas .linea-9{
+    width: 9%;
+    height: .3rem;
+    background-color: lightgrey;
+  }
+
+  .skill-lineas .linea-10{
+    width: 91%;
+    height: .3rem;
+    background-color: var(--color-primario);
+    
+  }
+
+  .skill-lineas .linea-11{
+    width: 22%;
+    height: .3rem;
+    background-color: lightgrey;
+  }
+
+  .skill-lineas .linea-12{
+    width: 78%;
+    height: .3rem;
+    background-color: var(--color-primario);
+    
+  }
+
+  .skills-btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: .60rem;
+    font-weight: 500;
+    background-color: white;
+    border: .1rem solid var(--tipografia-oscura);
+    width: 7rem;
+    height: 1.85rem;
+    box-shadow: .1rem .1rem lightgray;
+    border-radius: .1rem;
+  }
+  
+
 
   /* -------------      Estilos 5ta sección         ------------ */
 
@@ -559,27 +758,116 @@ main{
 
 /* -------------      Estilos Footer         ------------ */
 
+.footer-logos{
+    
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 
+.footer-logos-CL{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+    
+}
+
+.footer-logos-CL i{
+    font-size: 1rem;
+    padding-left: .5rem;
+}
+
+
+.footer-autoria{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6rem;
+
+}
 
 
 /* -------------      Diseño Responsive      ------------ */
 
-@media only screen and (max-width: 768px) { 
+
+
+/*    PANTALLA INTERMEDIA    */
+
+/* @media only screen and (max-width: 1000px) { 
     
     :root {
         font-size: 12px;
     }
     
     body{
-      background-color: aqua;  
+      background-color: lightpink;  
     }
     
+} */
+
+/*    TABLETS    */
+
+@media only screen and (max-width: 768px) { 
+    
+    :root {
+        font-size: 10px;
+    }
+    
+
+
+    body{
+      /* background-color: aqua;   */
+
+    }
+
+    .hero{
+        
+        height: 45rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+            
+    .hero-caja-texto{
+        flex-direction: column-reverse;
+        height: 40rem;
+    }
+    
+
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     CELULARES    */
 
 @media only screen and (max-width:600px) {
     
     :root {
-        font-size: 8px;
+        font-size: 6px;
     }
     
     body{

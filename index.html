@@ -10,23 +10,23 @@
 </head>
 <body>
                                 <!-- comienzo header con navbar-->
-    <header>
+    <header id="header">
         <nav>
             <div class="logo">
                 <h1>Evaristo</h1>
             </div>
             <ul>
-                <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>About</li>
-                <li><a href="#"></a>Services</li>
-                <li><a href="#"></a>Resume</li>
-                <li><a href="#"></a>Portfolio</li>
-                <li><a href="#"></a>Contact</li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#seccion-2">About</a></li>
+                <li><a href="#seccion-3">Services</a></li>
+                <li><a href="#seccion-4">Resume</a></li>
+                <li><a href="#seccion-5">Portfolio</a></li>
+                <li><a href="#seccion-6">Contact</a></li>
             </ul>
            <div class="nav-redes">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-github"></i>
+            <a href="https://www.facebook.com/evaristo.aguirre.1/"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/EvaristoAguirre" target="_blank"><i class="fa-brands fa-github"></i></a>
            </div>
 
         </nav>
@@ -41,7 +41,7 @@
                 <div class="texto-hero">
                     <h2>Hola, soy desarrollador </h2>
                     <h1>Front End</h1>
-                    <p>con base en Mendoza, Argentina</p>
+                    <p>con base en Mendoza, Argentina.</p>
                     <div class="btns-hero">
                         <button class="btn-hero">Mirá mis trabajos</button>
                         <div class="link-hero">
@@ -54,26 +54,28 @@
                     <img class="imagenPerfil" src="./assets/imagenes/IMG-20200607-WA0046-01.jpeg" alt="imagen de perfil">
                 </div>
             </div>
+            <div class="hero-flecha"><i class="fa-solid fa-arrow-down"></i></div>
         </section>
                                                             <!-- fin hero-->
-    <hr>  <!-- BORRAR-->
+   
 
                                 <!-- comienzo 2da seccion-->
 
-        <section class="seccion-modificador">
+        <section id="seccion-2" class="seccion-modificador">
             <div class="seccion-encabezado">
                 <p>Acerca de mí</p>
                 <h2>Conocé más</h2>
             </div>
             <div class="seccion-columnas">
                 <div class="colA">
-                    <h2>Hola, soy <ins><b>Evaristo Aguirre</b></ins></h2>
+                    <h2>Hola, soy <span>Evaristo Aguirre</span></h2>
                     <p>Soy diseñador y desarrolador web con pasión por el diseño web, disfruto desarrollando páginas web simples,limpias y dinámicas que proveen al usuario real valor a su uso. Miles de clientes han tenido resultados excepcionales trabajando conmigo.</p>
                 </div>
 
                 <div class="colB">
-                    <div class="circulo">
+                    <div class="exper-anios">
                         <h2>22</h2>
+                        <div class="circulo"></div>
                     </div>
                     <h3>años de <b>experiencia</b></h3>
                 </div>
@@ -101,11 +103,11 @@
         </section>
 
                                                             <!-- fin 2da seccion-->
-    <hr>  <!-- BORRAR-->
+   
 
                                 <!-- comienzo 3ra seccion-->
 
-        <section class="seccion-modificador color">
+        <section id="seccion-3" class="seccion-modificador color">
             <div class="seccion-encabezado">
                 <p>Qué hago?</p>
                 <h2>Como puedo ayudarte en tu próximo proyecto</h2>
@@ -152,10 +154,10 @@
         </section>
 
                                                             <!-- fin 3ra seccion-->
-    <hr>  <!-- BORRAR-->
+   
                                 <!-- comienzo 4ta seccion-->
 
-        <section class="seccion-modificador">
+        <section id="seccion-4" class="seccion-modificador">
             <div class="seccion-encabezado">
                 <p>Resumen</p>
                 <h2>Un resumen de mi currículum</h2>
@@ -218,24 +220,89 @@
 
             <div class="resumen-skills">
                 <h2>Mis Skills</h2>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="skills-columnas">
+                    <div class="skills-colA">
+                        <div class="skill">
+                            <div class="skill-texto">
+                                <p>HTML/CSS</p>
+                                <p>67%</p>
+                            </div>
+                            <div class="skill-lineas">
+                                <div class="linea-1"></div>
+                                <div class="linea-2"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-texto">
+                                <p>JavaScript</p>
+                                <p>13%</p>
+                            </div>
+                            <div class="skill-lineas">
+                                <div class="linea-3"></div>
+                                <div class="linea-4"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-texto">
+                                <p>React</p>
+                                <p>2%</p>
+                            </div>
+                            <div class="skill-lineas">
+                                <div class="linea-5"></div>
+                                <div class="linea-6"></div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="skills-colB">
+                        <div class="skill">
+                            <div class="skill-texto">
+                                <p>Fotografía</p>
+                                <p>84%</p>
+                            </div>
+                            <div class="skill-lineas">
+                                <div class="linea-7"></div>
+                                <div class="linea-8"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-texto">
+                                <p>Escucha activa</p>
+                                <p>91%</p>
+                            </div>
+                            <div class="skill-lineas">
+                                <div class="linea-9"></div>
+                                <div class="linea-10"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-texto">
+                                <p>Comunicación asertiva</p>
+                                <p>78%</p>
+                            </div>
+                            <div class="skill-lineas">
+                                <div class="linea-11"></div>
+                                <div class="linea-12"></div>
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
                 </div>
-                <button>Descargar CV</button>
+                <button class="skills-btn">Descargar CV</button>
             </div>
 
         </section>
 
                                                             <!-- fin 4ta seccion-->
-    <hr>  <!-- BORRAR-->
+   
                                 <!-- comienzo 5ta seccion-->
         
-        <section class="seccion-modificador color">
+        <section id="seccion-5" class="seccion-modificador color">
             <div class="seccion-encabezado">
                 <p>Portfolio</p>
                 <h2>Algunos de mis proyectos recientes</h2>
@@ -252,22 +319,22 @@
             </div>
                 
             <div class="portfolio-galeria">
-                    <div>*imagene*</div>
-                    <div>*imagene*</div>
-                    <div>*imagene*</div>
-                    <div>*imagene*</div>
-                    <div>*imagene*</div>
-                    <div>*imagene*</div>
+                    <div>*imagen*</div>
+                    <div>*imagen*</div>
+                    <div>*imagen*</div>
+                    <div>*imagen*</div>
+                    <div>*imagen*</div>
+                    <div>*imagen*</div>
             </div>
             
 
         </section>
 
                                                             <!-- fin 5ta seccion-->
-    <hr>  <!-- BORRAR-->
+    
                                 <!-- comienzo 6ta seccion-->
         
-        <section class="contacto seccion-modificador color-primario">
+        <section id="seccion-6" class="contacto seccion-modificador color-primario">
             <div class="contacto-datos">
                 <h2>Pongámonos en contacto</h2>
                 <p>Disfruto discutir nuevos proyectos y desafíos de diseño. Comparta tanta información como sea posible para que podamos aprovechar al máximo nuestra primera puesta al día.</p>
@@ -310,20 +377,22 @@
         </section>
 
                                                             <!-- fin 6ta seccion-->
- <hr>  <!-- BORRAR-->
+ 
     </main>
                                 <!-- comienzo footer-->
 
     <footer class="footer-modificador-color">
-            <div>
-                <div>
+            <div class="footer-logos">
+                <div class="footer-logos-CL">
                     <h3>Copyleft CC-BY-SA @2022</h3>
                     <i class="fa-brands fa-creative-commons"></i>
                     <i class="fa-brands fa-creative-commons-by"></i>
-                    <i class="fa-brands fa-creative-commons-sa"></i>
-                    <h3>Evaristo</h3>  
+                    <i class="fa-brands fa-creative-commons-sa"></i> 
+
                 </div>
-                <h3><b>Diseñado por Evaristo</b></h3>
+                <div class="footer-autoria">
+                    <h3>Diseñado por Evaristo</h3>
+                </div>
             </div>
     </footer>
                                                             <!-- fin footer-->
