@@ -275,12 +275,6 @@ main{
     margin-bottom: .5rem;
 }
 
-/* .seccion-columnas .colA ins{
-    text-decoration-color: var(--color-primario);
-    padding-bottom: 1.25rem;
-    
-} */
-
 .seccion-columnas .colA span{
     border-bottom: .25rem solid var(--color-primario);
     font-weight: 500;
@@ -466,6 +460,7 @@ main{
 
   .educacion hr, .experiencia hr {
     color: var(--color-secundario);
+    margin-top: .5rem;
     
   }
 
@@ -521,82 +516,63 @@ main{
 
   }
 
+  .skill-lineas div:first-child{
+    height: .35rem;
+    background-color: lightgrey;
+
+  }
+
+  .skill-lineas div:last-child{
+    height: .35rem;
+    background-color: var(--color-primario);
+  }
+
   .skill-lineas .linea-1{
     width: 33%;
-    height: .3rem;
-    background-color: lightgrey;
   }
 
   .skill-lineas .linea-2{
     width: 67%;
-    height: .3rem;
-    background-color: var(--color-primario);
-    
   }
 
   .skill-lineas .linea-3{
     width: 87%;
-    height: .35rem;
-    background-color: lightgrey;
   }
 
   .skill-lineas .linea-4{
     width: 13%;
-    height: .35rem;
-    background-color: var(--color-primario);
-    
   }
 
   .skill-lineas .linea-5{
     width: 98%;
-    height: .3rem;
-    background-color: lightgrey;
   }
 
   .skill-lineas .linea-6{
-    width: 2%;
-    height: .3rem;
-    background-color: var(--color-primario);
-    
+    width: 2%; 
   }
 
   .skill-lineas .linea-7{
     width: 16%;
-    height: .3rem;
-    background-color: lightgrey;
   }
 
   .skill-lineas .linea-8{
-    width: 84%;
-    height: .3rem;
-    background-color: var(--color-primario);
-    
+    width: 84%; 
   }
 
   .skill-lineas .linea-9{
     width: 9%;
-    height: .3rem;
-    background-color: lightgrey;
   }
 
   .skill-lineas .linea-10{
     width: 91%;
-    height: .3rem;
-    background-color: var(--color-primario);
-    
   }
 
   .skill-lineas .linea-11{
     width: 22%;
-    height: .3rem;
-    background-color: lightgrey;
   }
 
   .skill-lineas .linea-12{
     width: 78%;
-    height: .3rem;
-    background-color: var(--color-primario);
-    
   }
 
   .skills-btn{
@@ -610,8 +586,6 @@ main{
     box-shadow: .1rem .1rem lightgray;
     border-radius: .1rem;
   }
-  
-
 
   /* -------------      Estilos 5ta sección         ------------ */
 
@@ -759,12 +733,10 @@ main{
 /* -------------      Estilos Footer         ------------ */
 
 .footer-logos{
-    
     width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .footer-logos-CL{
@@ -793,23 +765,7 @@ main{
 
 /* -------------      Diseño Responsive      ------------ */
 
-
-
-/*    PANTALLA INTERMEDIA    */
-
-/* @media only screen and (max-width: 1000px) { 
-    
-    :root {
-        font-size: 12px;
-    }
-    
-    body{
-      background-color: lightpink;  
-    }
-    
-} */
-
-/*    TABLETS    */
+/*   ---------------- TABLETS ---------------------  */
 
 @media only screen and (max-width: 768px) { 
     
@@ -817,12 +773,7 @@ main{
         font-size: 10px;
     }
     
-
-
-    body{
-      /* background-color: aqua;   */
-
-    }
+    /* --------------           Hero     ------------- */
 
     .hero{
         
@@ -837,10 +788,130 @@ main{
         height: 40rem;
     }
     
+    /* --------------           2da Seccion     ------------- */
 
+    .seccion-columnas{
+        
+        flex-direction: column;
+        justify-content:center;
+      
+    }
+
+    .seccion-columnas .colA{
+        width: 65%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .seccion-columnas .colB .exper-anios{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .seccion-datos{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: auto;
+    }
+
+    .seccion-datos li{
+        padding-bottom: 1rem;
     
+    }
     
+    /* ----------------------      3ra Seccion   ---------------------*/
     
+    .container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 5% 5%;
+        width: 70%;
+        padding-bottom: 3rem;
+        grid-template-areas:
+          "Box-1 Box-2"
+          "Box-3 Box-4"
+          "Box-5 Box-6";
+      }
+
+      /* ----------------------      4ta Seccion   ---------------------*/
+
+      .resumen-columnas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .resumen-colA, .resumen-colB{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-left: 0%;
+      }
+
+      .skills-columnas{
+        width: 70%;
+      }
+
+      /* ----------------------      5ta Seccion   ---------------------*/
+    
+      .portfolio-galeria div{
+        width: 42.5%;
+      }
+
+      /* ----------------------      6ta Seccion   ---------------------*/
+
+      .contacto{
+        flex-direction: column;
+    }
+
+    .contacto-datos, .contacto-formulario{
+        width: 60%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .contacto-formulario div{
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .contacto-formulario textarea{
+        width: 90%;
+        margin: .75rem 0;
+        height: 7rem;
+    }
+
+    .contacto-formulario label{
+        margin-bottom: 1rem;
+        text-align: start;
+    }
+
+    .contacto-formulario input{
+        margin-bottom: 1rem;
+    }
+
+    .contacto-formulario .formulario-btn{
+        margin: 0 auto;
+    }
+
+    /* ----------------------      Footer    ---------------------*/
+
+    .footer-logos{
+        justify-content: center; 
+        flex-direction: column;
+    }
+
+    .footer-logos-CL, .footer-autoria{
+        margin: 0;
+        justify-content: center;
+    }
 }
 
 
