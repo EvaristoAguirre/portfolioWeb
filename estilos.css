@@ -737,7 +737,7 @@ main{
 @media only screen and (max-width: 768px) { 
     
     :root {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     /*  -------------         NavBar     ----------       */
@@ -828,13 +828,13 @@ main{
       }
 
       .resumen-colA, .resumen-colB{
-        width: 100%;
+        width: 80%;
         margin-bottom: 1.5rem;
         margin-left: 0%;
       }
 
       .skills-columnas{
-        width: 70%;
+        width: 80%;
       }
 
       /* ----------------------      5ta Seccion   ---------------------*/
@@ -894,17 +894,6 @@ main{
         justify-content: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ----------------------    CELULARES  ------------------------  */
