@@ -246,9 +246,7 @@ main{
 }
 
 .seccion-columnas .colA{
-    width: 60%;
-    /* background-color: lightgreen; */
-    
+    width: 60%;    
 }
 
 .seccion-columnas .colA h2{
@@ -260,7 +258,6 @@ main{
 .seccion-columnas .colA span{
     border-bottom: .25rem solid var(--color-primario);
     font-weight: 500;
-    
 }
 
 .seccion-columnas .colA p{
@@ -412,8 +409,6 @@ main{
   }
 
   .educacion, .experiencia{
-    /* background-color: rgb(243, 140, 122); */
-    /* width: 40%; */
     padding-left: 0.45rem;
     margin: 0 1rem;
     border-left: 0.15rem solid var(--color-primario);
@@ -430,13 +425,11 @@ main{
     justify-content: space-between;
     align-content: center;
     height: 6rem;
-    /* background-color: tomato; */
   }
 
   .educacion hr, .experiencia hr {
     color: var(--color-secundario);
     margin-top: .5rem;
-    
   }
 
   .educacion h2, .experiencia h2, .educacion h3, .experiencia h3 {
@@ -728,7 +721,6 @@ main{
     padding-left: .5rem;
 }
 
-
 .footer-autoria{
     width: 50%;
     display: flex;
@@ -927,9 +919,13 @@ main{
         /* background-color: lightcoral; */
     }
 
+/* ----------------------   Header  ------------------------  */
+
     #header{
         height: 3rem;
     }
+
+/* ----------------------   NavBar  ------------------------  */
 
     .nav-lista{
         display: none;
@@ -944,6 +940,7 @@ main{
         display: inline-flex;
     }
 
+/* ----------------------    Hero  ------------------------  */
 
     .hero{
         height: 55rem;
@@ -953,11 +950,11 @@ main{
     }
             
     .hero-caja-texto{
-        width: 70%;
+        width: 80%;
         flex-direction: column-reverse;
         height: 55rem;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 
     .texto-hero{
@@ -967,7 +964,7 @@ main{
     }
 
     .texto-hero h1{
-        width: 87%;
+        width: 98%;
         font-size: 4rem;
     }
 
@@ -981,16 +978,316 @@ main{
         margin: 0;
     }
 
+    .link-hero{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
     .link-hero p{
-        font-size: .75rem;
+        font-size: 1.25rem;
     }
     
     .link-hero i{
         font-size: 1.5rem;
+        padding-bottom: 1rem;
     }
     
     .hero-flecha{
-        width: 2.5rem;
+        font-size: 2rem;
+        padding-bottom: 2.75rem;
     }
+
+/* -------------  Modificadores de seccion y color  ------------------  */
+
+.seccion-encabezado p{
+    font-size: 1.25rem;
+}
+
+.seccion-encabezado h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* -------------------     2da Seccion     ------------------  */
+
+.seccion-columnas .colA{
+    width: 100%;    
+}
+
+.seccion-columnas .colA h2{
+    font-size: 2.55rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.seccion-columnas .colA span{
+    font-weight: 500;
+}
+
+.seccion-columnas .colA p{
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+}
+
+.seccion-columnas .colB{
+    width: 70%;
+}
+
+.seccion-columnas .colB h2{
+    font-size: 6.5rem; 
+}
+
+.seccion-columnas .colB .circulo{
+    width: 6.5rem;
+    height: 6.5rem;
+    bottom: 5.75rem;
+    
+}
+
+.seccion-columnas .colB h3{
+    bottom: 5.5rem;
+    font-size: 2rem;
+}
+
+.seccion-datos{
+    margin-top: .3rem;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    justify-content: flex-start;
+}
+
+.seccion-datos li h2{
+    font-size: 1.15rem;
+}
+
+.seccion-datos li p{
+    font-size: 1.25rem;
+}
+
+/* -------------------     3ra Seccion     ------------------  */
+
+.container {  
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (6, 1fr);
+    gap: 1%;
+    width: 90%;
+    grid-template-areas:
+      "Box-1" 
+      "Box-2" 
+      "Box-3"
+      "Box-4" 
+      "Box-5"
+      "Box-6";
+  }
+
+  .container i:nth-child(n){
+    font-size: 2rem;
+  }
+
+  .container h3:nth-child(n){
+    font-size: 2rem;
+  }
+
+  .container p:nth-child(n){
+    font-size: 1.25rem;
+  }
+
+  /* -------------------     4ta Seccion     ------------------  */
+
+  .resumen-colA, .resumen-colB{
+    width: 95%;
+  }
+
+  .resumen-colA h2, .resumen-colB h2{
+    font-size: 1.5rem;
+
+  }
+
+  .resumen-colA h3, .resumen-colB h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .resumen-colA p, .resumen-colB p{
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+  }
+
+  .educacion div:nth-child(n), .experiencia div:nth-child(n){
+    height: 10rem;
+  }
+
+  .resumen-skills{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4rem;
+  }
+
+  .resumen-skills h2{
+    font-size: 1.5rem;
+  }
+
+  .skills-columnas{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-colA, .skills-colB{
+    width: 100%;
+  }
+
+  .skill{
+    margin-bottom: 1rem;
+  }
+
+   .skill-texto{
+    font-size: 1.25rem;
+  }
+
+  .skill-lineas div:first-child{
+    height: .55rem;
+  }
+
+  .skill-lineas div:last-child{
+    height: .55rem;
+  }
+
+  .skills-btn{
+    margin: 0 12rem;
+    font-size: 1.20rem;
+    font-weight: 500;
+    border: .2rem solid var(--tipografia-oscura);
+    width: 13rem;
+    height: 3.85rem;
+    border-radius: .3rem;
+  }
+
+  /* -------------------     5ta Seccion     ------------------  */
+
+  .portfolio-lista li{
+    font-size: 1.25rem;
+  }
+
+  .portfolio-galeria div{
+    width: 90%;
+  }
+
+  /* -------------------     6ta Seccion     ------------------  */
+
+.contacto-datos, .contacto-formulario{
+    width: 90%;
+    height: 45rem;
+    margin-bottom: 1.5rem;
+}
+
+.contacto-datos h2, .contacto-formulario h2{
+    font-size: 2.35rem;
+}
+
+.contacto-datos p{
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+}
+
+.contacto-datos-personales h3{
+    font-size: 1.5rem;
+}
+
+.contacto-datos-iconos i{
+    font-size: 2.25rem;
+}
+
+.contacto-formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.contacto-formulario h2{
+    margin-bottom: 2rem;
+}
+
+.contacto-formulario label{
+    font-size: 1.5rem;
+}
+
+.contacto-formulario .formulario-btn{
+    margin: 0 auto;
+}
+
+.contacto-formulario input{
+    width: 90%;
+    margin: 2rem 0 2.5rem;
+    background-color: var(--color-primario);
+    border: .2rem solid transparent;
+    border-bottom: .2rem solid var(--tipografia-oscura);
+    outline: none;
+    
+}
+
+.contacto-formulario textarea{
+    width: 90%;
+    height: 12rem;
+    margin: .75rem 0;
+    border: .2rem solid transparent;
+    border-bottom: .2rem solid var(--tipografia-oscura);
+    
+}
+
+.formulario-btn{
+    width: 12rem;
+    height: 4rem;
+    border: .1rem solid var(--tipografia-oscura);
+    padding: .5rem 0;
+}
+
+.formulario-btn p{
+    font-size: 1.5rem;
+}
+
+/* -------------------     Footer     ------------------  */
+
+.footer-modificador-color{
+    height: 15rem;
+}
+
+.footer-logos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.footer-logos-CL{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-bottom: 2rem; 
+}
+
+.footer-logos-CL h3, .footer-autoria h3{
+    font-size: 1.5rem;
+}
+
+.footer-logos-CL i{
+    font-size: 1.75rem;
+    padding-left: .5rem;
+}
+
+
+.footer-autoria{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+}
 
 }
